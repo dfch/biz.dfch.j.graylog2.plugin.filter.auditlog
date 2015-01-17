@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
  */
 public class dfchBizAuditLog implements MessageFilter
 {
-    private static final String DF_PLUGIN_NAME = "d-fens SCRIPT Filter";
+    private static final String DF_PLUGIN_NAME = "d-fens AUDITLOG Filter";
     private static final String DF_PLUGIN_HUMAN_NAME = "biz.dfch.j.graylog2.plugin.filter.auditlog";
     private static final String DF_PLUGIN_DOC_LINK = "https://github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog";
     private static final String DF_PLUGIN_PRIORITY = "DF_PLUGIN_PRIORITY";
@@ -43,11 +43,14 @@ public class dfchBizAuditLog implements MessageFilter
 
     private static final Logger LOG = LoggerFactory.getLogger(dfchBizAuditLog.class);
 
+    
     @Override
     public boolean filter(Message msg)
     {
         System.out.printf("*** %s: '%s'\r\n", msg.getId(), msg.getMessage());
         LOG.trace("*** %s: '%s'\r\n", msg.getId(), msg.getMessage());
+        msg.addField("DF_PLUGIN_NAME", DF_PLUGIN_NAME);
+        msg.getFilterOut();
         return false;
     }
 
