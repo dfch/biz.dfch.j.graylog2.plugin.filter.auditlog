@@ -1,8 +1,15 @@
-Graylog2 Plugin - dfchBizAuditLog
-====================================
+biz.dfch.j.graylog2.plugin.filter.auditlog
+============================================
 
-Welcome to your new Graylog2 plugin!
+Plugin: biz.dfch.j.graylog2.plugin.filter.auditlog
 
+d-fens GmbH, General-Guisan-Strasse 6, CH-6300 Zug, Switzerland
+
+This Graylog2 Filter Plugin lets you send all incoming messages to some other destination for audit trail purposes.
+
+See [Creating a Graylog2 Output Plugin](http://d-fens.ch/2015/01/07/howto-creating-a-graylog2-output-plugin/) for further description on how to create plugins.
+
+You can [download the binary](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/files) [![Build Status](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.alarm.execscript/status.png)](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/latest) at our [drone.io](https://drone.io/github.com/dfch) account, which gets built every time we commit something to the master branch of the repository.
 
 Getting started for users
 -------------------------
