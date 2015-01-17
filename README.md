@@ -9,7 +9,7 @@ This Graylog2 Filter Plugin lets you send all incoming messages to some other de
 
 See [Creating a Graylog2 Output Plugin](http://d-fens.ch/2015/01/07/howto-creating-a-graylog2-output-plugin/) for further description on how to create plugins.
 
-You can [download the binary](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/files) [![Build Status](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.alarm.execscript/status.png)](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/latest) at our [drone.io](https://drone.io/github.com/dfch) account, which gets built every time we commit something to the master branch of the repository.
+You can [download the binary](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/files) [![Build Status](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/status.png)](https://drone.io/github.com/dfch/biz.dfch.j.graylog2.plugin.filter.auditlog/latest) at our [drone.io](https://drone.io/github.com/dfch) account, which gets built every time we commit something to the master branch of the repository.
 
 Getting started for users
 -------------------------
