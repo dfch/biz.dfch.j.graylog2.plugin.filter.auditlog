@@ -1,9 +1,9 @@
 package biz.dfch.j.graylog2.plugin.filter;
 
 import java.util.Collection;
-import com.google.common.collect.Lists;
 import org.graylog2.plugin.Plugin;
 import org.graylog2.plugin.PluginModule;
+import java.util.Collections;
 
 /**
  * Implement the Plugin interface here.
@@ -11,7 +11,7 @@ import org.graylog2.plugin.PluginModule;
 public class dfchBizAuditLogPlugin implements Plugin {
     @Override
     public Collection<PluginModule> modules () {
-        return Lists.newArrayList((PluginModule) new dfchBizAuditLogModule());
+        return Collections.<PluginModule>singleton(new dfchBizAuditLogModule());
     }
 }
 

@@ -1,11 +1,49 @@
 package biz.dfch.j.graylog2.plugin.filter;
 
 import org.graylog2.plugin.PluginMetaData;
+import org.graylog2.plugin.Version;
+
+import java.net.URI;
 
 /**
  * Implement the PluginMetaData interface here.
  */
 public class dfchBizAuditLogMetadata implements PluginMetaData {
+    @Override
+    public String getUniqueId()
+    {
+        return "056230e2-8495-42ca-a809-c44ceae3d6df";
+    }
+    @Override
+    public String getName()
+    {
+        return "d-fens AUDITLOG Filter";
+    }
+    @Override
+    public String getAuthor()
+    {
+        return "Ronald Rink, d-fens GmbH";
+    }
+    @Override
+    public URI getURL()
+    {
+        return URI.create("http://www.d-fens.ch");
+    }
+    @Override
+    public Version getVersion()
+    {
+        return new Version(1, 0, 0);
+    }
+    @Override
+    public String getDescription()
+    {
+        return "d-fens AUDITLOG Filter. With this plugin you can send messages to another destination.";
+    }
+    @Override
+    public Version getRequiredVersion()
+    {
+        return new Version(0, 90, 0);
+    }
 }
 
 /**

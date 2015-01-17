@@ -21,6 +21,7 @@ public class dfchBizAuditLogModule extends PluginModule {
          * addAlarmCallback(Class<? extends AlarmCallback>);
          * addInitializer(Class<? extends Service>);
          */
+        addMessageFilter(dfchBizAuditLog.class);
     }
 }
 
