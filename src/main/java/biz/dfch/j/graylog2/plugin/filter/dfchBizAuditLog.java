@@ -50,7 +50,11 @@ public class dfchBizAuditLog implements MessageFilter
         System.out.printf("*** %s: '%s'\r\n", msg.getId(), msg.getMessage());
         LOG.trace("*** %s: '%s'\r\n", msg.getId(), msg.getMessage());
         msg.addField("DF_PLUGIN_NAME", DF_PLUGIN_NAME);
-        msg.getFilterOut();
+        
+        
+        // TODO 
+        // add your code to forward messages to where it is needed
+        
         return false;
     }
 
